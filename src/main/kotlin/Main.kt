@@ -1,25 +1,37 @@
-fun main(args: Array<String>){
-    val text = "akirachix"
-    println(text[0]+""+text[2]+""+text[3])
+fun main(args: Array<String>) {
+    val letter= "akirachix"
+    println(letter[0] + "" + letter[2] + "" + letter[3])
 
 
-    val name = "Tek "
-    val age = 21
-    val stnc = "Hi my name is "+name+" and I am "+age+" old."
-    println(stnc)
 
-    val wonder = "Northern lights"
-    wonder.length
-    println(wonder.length)
+    myName("Tek",17)
+    findlength("Norther lights")
+    me("Nyeliep Giel")
 
 
-    var me = "Nyeliep Giel"
-    if (me.equals("Nyeliep Giel"))
-        println("That's me")
+}
 
 
-    else{
-        println("I don't know who that is")
+
+fun myName( name : String, age:Int):String {
+    val result = ("Hi my name is $name and I am $age old.")
+    println(result)
+    return result
+}
+
+    fun findlength(wordlength: String): Int {
+        val length = wordlength.length
+        return length
+    }
+
+
+    fun me(text: String) {
+        var me = "Nyeliep Giel"
+        if (me.equals("Nyeliep Giel"))
+            println("That's me")
+        else {
+            println("I don't know who that is")
+        }
     }
 
 
@@ -50,4 +62,3 @@ fun main(args: Array<String>){
 
 
 
-}
